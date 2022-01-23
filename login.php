@@ -41,7 +41,7 @@ if(is_post_request()) {
 
 }
 ?>
-<div class="pt-5 container  custom-height">
+<div class="pt-5 container">
 <h1 class="text-center"> Login </h1>  
 	<div class="container">
 		<div class="row">

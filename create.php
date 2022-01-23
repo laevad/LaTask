@@ -23,7 +23,7 @@ if(is_post_request()){
 }
 ?>
 <?php include 'shared/header.php' ?>
-<div class=" container custom-height">
+<div class=" container">
     <a class="btn btn-secondary btn-outline-warning mt-3 ml-3 mb-3" href="<?php echo url_for('index.php'); ?>" >&laquo; Back to Homepage</a>
     <h1 class="text-center text-secondary font-weight-bolder">Add Product</h1>
     <form method="post" action="#" autocomplete="off" enctype="multipart/form-data">

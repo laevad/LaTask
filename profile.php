@@ -21,31 +21,31 @@ if(is_post_request()) {
   $user = find_user_by_id($id);
 }
 ?>
-<div class=" container custom-height">
+<div class=" container">
     <a class="btn btn-secondary btn-outline-warning mt-3 ml-3 mb-3" href="<?php echo url_for('index.php'); ?>" >&laquo; Back to Homepage</a>
     <h1 class="text-center text-secondary font-weight-bolder">Edit Profile</h1>
 	 <?php echo display_errors($errors); ?>
 	 <?php echo display_session_message() ?>
-    <form method="post" action="<?php echo url_for('profile.php?id=' . h(u($id))); ?>" autocomplete="off" enctype="multipart/form-data">
+    <form class="mt-5" method="post" action="<?php echo url_for('profile.php?id=' . h(u($id))); ?>" autocomplete="off" enctype="multipart/form-data">
         <div class="modal-body">
             <div class="form-group">
-                <label for="username">Username</label>
+                <!--<label for="username">Username</label>-->
                 <input type="text" required class="form-control" id="username" name="username" value="<?php echo h($user['username']); ?>"  placeholder="Enter Username">
             </div>
             <div class="form-group">
-                <label for="contact">Contact</label>
+                <!--<label for="contact">Contact</label>-->
                 <input type="number" required class="form-control" id="contact" name="contact" value="<?php echo h($user['contact']); ?>"  placeholder="Enter Contact">
             </div>
             <div class="form-group">
-                <label for="address">Address</label>
+                <!--<label for="address">Address</label>-->
                 <input type="text" required class="form-control" id="address" name="address" value="<?php echo h($user['address']); ?>"  placeholder="Enter Address">
             </div>
 			 <div class="form-group">
-                <label for="password">Password</label>
+                <!--<label for="password">Password</label>-->
                 <input type="password" class="form-control" id="password" name="password"  placeholder="Enter New Password">
             </div>
 			 <div class="form-group">
-                <label for="confirm_password">Confirm Password</label>
+                <!--<label for="confirm_password">Confirm Password</label>-->
                 <input type="password" class="form-control" id="confirm_password" name="confirm_password"  placeholder="Confirm New Password">
             </div>
         </div>

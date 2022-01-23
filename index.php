@@ -6,7 +6,7 @@
         <?php if(is_logged_in()) { ?>
             <a type="button" class="btn mt-3 mb-3 btn-secondary btn-outline-warning" href="<?php echo url_for('create.php'); ?>">Add Product</a>
         <?php } ?>
-		<div class="card">
+		<div class="container">
 		  <div class="card-body">
 		  <?php if(mysqli_num_rows($get_data) > 0){ ?>
 			<div class="pBox">
