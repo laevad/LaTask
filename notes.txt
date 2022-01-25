@@ -1,1 +1,2 @@
-create folder > uploads
+import db > db/latask.sql
+project > // project folder should be LaTask or change the public end in the initialize.php
